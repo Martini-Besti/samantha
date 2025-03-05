@@ -1,5 +1,5 @@
 """
-WSGI config for devhome project.
+WSGI config for cfehome project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
