@@ -34,5 +34,3 @@ def about_view(request, *args, **kwargs):
     return render(request, html_template, my_context)
     
     
-
-    return HttpResponse(html_)
