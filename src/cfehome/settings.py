@@ -32,7 +32,7 @@ ALLOWED_HOSTS = [
     ".railway.app",  # for production on Railway
     "127.0.0.1",  # for local development
     "localhost",  # for local development
-    # "samanthatheclair.com"
+    "samanthatheclair.com"
 ]
 if DEBUG:
     ALLOWED_HOSTS += ["127.0.0.1", "localhost"]
