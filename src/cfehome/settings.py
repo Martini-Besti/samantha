@@ -92,11 +92,10 @@ DATABASES = {
     }
 }
 CONN_MAX_AGE = config("CONN_MAX_AGE", cast=int, default=30)
-DATABASE_URL = config("DATABASE_URL", cast=str, default=None)
-print("DATABASE_URL:", DATABASE_URL)  # Debug line
-if DATABASE_URL is not None:
+DATABASE_URL = config("DATABASE_URL", default=None)  # Remove cast=str
+print("DATABASE_URL:", DATABASE_URL)
+if DATABASE_URL:  # This will check if DATABASE_URL is truthy (not None and not empty)
     import dj_database_url
-
     DATABASES = {
         "default": dj_database_url.config(
             default=DATABASE_URL, conn_max_age=CONN_MAX_AGE, conn_health_checks=True

@@ -20,7 +20,7 @@ def about_view(request, *args, **kwargs):
         percent = (page_qs.count() * 100.0) / qs.count()
     except:
         percent = 0
-    my_title = "My page"
+    my_title = "Samantha The Clair"
     html_template = "home.html"
     my_context = {
         "page_title": my_title,
