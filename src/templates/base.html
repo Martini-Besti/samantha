@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>{% block head_title %}Samantha{% endblock head_title %}</title>
-</head>
-<body>{{ page_title }}</h1>
-
-    {% block content %}
-    Frankie says hello
-    {% endblock content %}   
-   
-    
-</body>
+    {% include 'base/css.html'%}
+  </head>
+  <body>
+    {% include 'nav/navbar.html' %}
+    {% block content %} 
+    {% endblock content %} 
+    {% include 'base/js.html'%}
+  </body>
 </html>
