@@ -47,6 +47,7 @@ VENDOR_STATICFILES = {
     "flowbite.min.js": "https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js", 
     # "flowbite.min.js.map": "https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js.map"
 }
+WHITENOISE_MANIFEST_STRICT = False  # Allow missing files
 
 
 class Command(BaseCommand):
