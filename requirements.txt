@@ -4,3 +4,4 @@ python-decouple==3.8
 psycopg[binary]
 dj-database-url==2.1.0
 requests
+whitenoise==6.9.0
