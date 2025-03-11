@@ -151,13 +151,13 @@ STATICFILES_VENDOR_DIR = STATICFILES_BASE_DIR / "vendors"
 STATICFILES_DIRS = [STATICFILES_BASE_DIR]
 STATIC_ROOT = BASE_DIR / "local-cdn"
 
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage",
+# STATICFILES_STORAGES = "whitenoise.storage.CompressedManifestStaticFilesStorage",
 
 
 STORAGES = {
     # ...
     "staticfiles": {
-        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage"
     },
 }
 # Default primary key field type
