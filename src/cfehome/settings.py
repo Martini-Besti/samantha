@@ -151,7 +151,7 @@ STATICFILES_VENDOR_DIR = STATICFILES_BASE_DIR / "vendors"
 STATICFILES_DIRS = [STATICFILES_BASE_DIR]
 STATIC_ROOT = BASE_DIR / "local-cdn"
 
-STATICFILES_STORAGES = "whitenoise.storage.CompressedManifestStaticFilesStorage",
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage",
 
 
 STORAGES = {
