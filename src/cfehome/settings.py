@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     # my-apps
+    "commando",
     "visits",
 ]
 
@@ -141,11 +142,12 @@ USE_TZ = True
 # # Static files (CSS, JavaScript, Images)
 # # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-
-# To this
 STATIC_URL = "/static/"
+STATICFILES_BASE_DIR = BASE_DIR / "staticfiles"
+STATICFILES_VENDOR_DIR = STATICFILES_BASE_DIR / "vendors"
+
 STATICFILES_DIRS = [
-    BASE_DIR / "staticfiles",
+    STATICFILES_BASE_DIR
 ]
 STATIC_ROOT = BASE_DIR / "local-cdn"
 
