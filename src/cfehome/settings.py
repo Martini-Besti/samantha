@@ -35,6 +35,7 @@ ALLOWED_HOSTS = [
     "127.0.0.1",  # for local development
     "localhost",  # for local development
     "samanthatheclair.com",
+    "www.samanthatheclair.com",
 ]
 if DEBUG:
     ALLOWED_HOSTS += ["127.0.0.1", "localhost"]
