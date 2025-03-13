@@ -26,7 +26,7 @@ SECRET_KEY = config("DJANGO_SECRET_KEY", default="cleo")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-# DEBUG = True # temporary override
+DEBUG = True # temporary override
 DEBUG = config("DJANGO_DEBUG", cast=bool)
 
 
